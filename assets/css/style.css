@@ -7,7 +7,8 @@
 body {
     background-color: #d9dcd6;
 }
-/* change Header to Navigation */
+/* change {.class} to {header} */
+/* remove all {.class} except for {.hero , .float-left , .float-right} */
 
 header {
     padding: 20px;
@@ -24,7 +25,8 @@ header h1 {
 header h1 span {
     color: #d9dcd6;
 }
-
+/* remove extra {.header-class} and replace with {nav} */
+/* {header} is parent of {nav} */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,16 +34,18 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+/*{nav} is parent to {ul}*/
 
 header nav ul {
     list-style-type: none;
 }
-
+/* sets an unordered list within {nav}*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* {li} is parent to {a}*/
+/* customization for <href-link> inside <a>*/
 a {
     color: #ffffff;
     text-decoration: none;
@@ -66,14 +70,15 @@ a {
     float: right;
     margin-left: 25px;
 }
-/* remove p tag and add font size into main */
+/* remove <p> and add font size into <main> */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
     font-size: 16px;
 }
-/* change div class to section */
+/* remove {div-class=benefits} to {section} */
+
 section {
     margin-right: 20px;
     padding: 33px;
@@ -84,27 +89,25 @@ section {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/* change div to aside */ 
+/* change {.benefit} to {aside} */ 
 aside {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-
+/* coresponds as <h3> child tag to <aside> parent */
 aside h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-
+/* corespnds to <asside img>*/
 aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/* remove benefits rename to article */
-/* change div class id to article */ 
-
+/* establish {article-id} as parent to <h2> and <p> tags */
 article {
     margin-bottom: 20px;
     padding: 50px;
@@ -114,18 +117,18 @@ article {
     color: #ffffff;
 }
 
-/* rename to article to link to image*/ 
+/* rename to {article img} to link to <image link>*/ 
 article img {
     max-height: 200px;
 }
 
-/* rename to article to connect to h2 tag*/ 
+/* adds customization to <h2> tags within <article> parent */ 
 article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-
+/* remove {.footer} to <footer> */
+/* adds cutomization to <footer> tag */
 footer {
     padding: 30px;
     clear: both;
@@ -133,6 +136,7 @@ footer {
     text-align: center;
     font-size: 20px;
 }
+/* specifies how to customize <h2> tag inside <footer> parent*/
 footer h2 {
     font-size: 20px;
 }
